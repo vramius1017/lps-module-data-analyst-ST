@@ -7,10 +7,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 0,
-              "width": 12,
-              "height": 7
+              "top": 1,
+              "left": 1,
+              "width": 9,
+              "height": 6
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -37,11 +37,11 @@
   "name": "lps-module1-covid\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613663038181
+    "lastModifiedOn": 1613663061473
   },
   "creationTag": {
     "versionNumber": 0,
