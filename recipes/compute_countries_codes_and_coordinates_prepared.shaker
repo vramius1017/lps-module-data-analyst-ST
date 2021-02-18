@@ -26,8 +26,42 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geoPoint",
+        "lat_column": "Latitude (average)",
+        "lon_column": "Longitude (average)"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Country",
+          "Alpha-2 code",
+          "Numeric code",
+          "Latitude (average)",
+          "Longitude (average)"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +69,15 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Numeric code": 105,
+    "Alpha-3 code": 105,
+    "Latitude (average)": 150,
+    "Longitude (average)": 158,
+    "Country": 211,
+    "Alpha-2 code": 105,
+    "geoPoint": 190
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

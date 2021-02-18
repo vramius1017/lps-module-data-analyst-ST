@@ -8,7 +8,11 @@
         "readParams": {
           "mode": "AUTO",
           "autoModeRepartitionInto": 10,
-          "map": {}
+          "map": {
+            "countries_codes_and_coordinates": {
+              "repartition": 10
+            }
+          }
         },
         "useGlobalMetastore": false,
         "useNativeProcessors": true,
@@ -67,11 +71,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613661686131
+    "lastModifiedOn": 1613661758098
   },
   "creationTag": {
     "versionNumber": 0,
