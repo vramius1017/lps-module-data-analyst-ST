@@ -69,11 +69,11 @@
           "maxReadUncompressedBytes": -1
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 1
+        "_refreshTrigger": 2
       },
       "def": {
         "type": "admin_map",
-        "variant": "filled_map",
+        "variant": "normal",
         "name": "New chart",
         "userEditedName": false,
         "genericDimension0": [],
@@ -94,7 +94,7 @@
         "yMeasure": [],
         "colorMeasure": [
           {
-            "column": "new_deaths_per_million",
+            "column": "total_deaths_per_million",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -104,7 +104,18 @@
             "computeModeDim": 0
           }
         ],
-        "sizeMeasure": [],
+        "sizeMeasure": [
+          {
+            "column": "total_deaths",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
         "geometry": [
           {
             "column": "geoPoint",
@@ -141,22 +152,34 @@
         "colorOptions": {
           "singleColor": "#2678B1",
           "transparency": 0.75,
-          "colorPalette": "default",
+          "colorPalette": "OrRd",
           "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
             "name": "Custom Palette",
-            "colors": [],
+            "colors": [
+              "rgb(158,1,66)",
+              "rgb(213,62,79)",
+              "rgb(244,109,67)",
+              "rgb(253,174,97)",
+              "rgb(254,224,139)",
+              "rgb(255,255,191)",
+              "rgb(230,245,152)",
+              "rgb(171,221,164)",
+              "rgb(102,194,165)",
+              "rgb(50,136,189)",
+              "rgb(94,79,162)"
+            ],
             "values": [],
             "fixedValues": false
           },
-          "paletteType": "DIVERGING",
+          "paletteType": "CONTINUOUS",
           "quantizationMode": "NONE",
           "numQuantizeSteps": 5,
-          "paletteMiddleValue": 0.0
+          "paletteMiddleValue": 3.0
         },
         "bubblesOptions": {
-          "defaultRadius": 5.0,
+          "defaultRadius": 2.0,
           "singleShape": "FILLED_CIRCLE"
         },
         "computeMode": "NORMAL",
