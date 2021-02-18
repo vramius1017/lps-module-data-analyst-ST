@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613661686128
+    "lastModifiedOn": 1613661758034
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,28 +87,12 @@
   "schema": {
     "columns": [
       {
-        "name": "Country",
-        "type": "string"
-      },
-      {
-        "name": "Alpha-2 code",
-        "type": "string"
-      },
-      {
         "name": "Alpha-3 code",
         "type": "string"
       },
       {
-        "name": "Numeric code",
-        "type": "bigint"
-      },
-      {
-        "name": "Latitude (average)",
-        "type": "double"
-      },
-      {
-        "name": "Longitude (average)",
-        "type": "double"
+        "name": "geoPoint",
+        "type": "string"
       }
     ],
     "userModified": true
