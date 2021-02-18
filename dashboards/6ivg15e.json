@@ -16,7 +16,7 @@
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -37,11 +37,11 @@
   "name": "lps-module1-covid\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613663061473
+    "lastModifiedOn": 1613663080242
   },
   "creationTag": {
     "versionNumber": 0,
