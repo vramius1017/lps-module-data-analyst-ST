@@ -10,7 +10,7 @@
         "useGlobalProxy": true,
         "providerType": "URL",
         "params": {
-          "path": "https://www.google.com/covid19/mobility/",
+          "path": "https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv",
           "consider404AsEmpty": true,
           "fallbackHeadToGet": true,
           "trustAnySSLCertificate": false
@@ -37,11 +37,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613854233702
+    "lastModifiedOn": 1613854333630
   },
   "creationTag": {
     "versionNumber": 0,
