@@ -5,7 +5,18 @@
   "params": {
     "deleteExtraFiles": true,
     "copyEvenUpToDateFiles": false,
-    "sources": []
+    "sources": [
+      {
+        "useGlobalProxy": true,
+        "providerType": "URL",
+        "params": {
+          "path": "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv",
+          "consider404AsEmpty": true,
+          "fallbackHeadToGet": true,
+          "trustAnySSLCertificate": false
+        }
+      }
+    ]
   },
   "customMeta": {
     "kv": {}
@@ -26,11 +37,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613855137533
+    "lastModifiedOn": 1613855145127
   },
   "creationTag": {
     "versionNumber": 0,
