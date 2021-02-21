@@ -8,11 +8,9 @@ from dataiku import pandasutils as pdu
 2_time_series_covid19_confirmed_global_df = 2_time_series_covid19_confirmed_global.get_dataframe()
 
 
-# Compute recipe outputs from inputs
-# TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
-# NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
-
-confirmed_pivoted_df = 2_time_series_covid19_confirmed_global_df # For this sample code, simply copy input to output
+confirmed_pivoted_df = 2_time_series_covid19_confirmed_global_df.melt(id_vars=["Country/Region", "Province/State", "Lat", "Long"], 
+        var_name="Date", 
+        value_name="Value")
 
 
 # Write recipe outputs
