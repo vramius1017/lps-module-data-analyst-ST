@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613899527214
+    "lastModifiedOn": 1613899554522
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,18 +89,6 @@
       {
         "name": "Country/Region",
         "type": "string"
-      },
-      {
-        "name": "Province/State",
-        "type": "string"
-      },
-      {
-        "name": "Lat",
-        "type": "double"
-      },
-      {
-        "name": "Long",
-        "type": "double"
       },
       {
         "name": "Date",
