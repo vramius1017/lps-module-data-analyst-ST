@@ -15,6 +15,26 @@
           "fallbackHeadToGet": true,
           "trustAnySSLCertificate": false
         }
+      },
+      {
+        "useGlobalProxy": true,
+        "providerType": "URL",
+        "params": {
+          "path": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv",
+          "consider404AsEmpty": true,
+          "fallbackHeadToGet": true,
+          "trustAnySSLCertificate": false
+        }
+      },
+      {
+        "useGlobalProxy": true,
+        "providerType": "URL",
+        "params": {
+          "path": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv",
+          "consider404AsEmpty": true,
+          "fallbackHeadToGet": true,
+          "trustAnySSLCertificate": false
+        }
       }
     ]
   },
@@ -37,11 +57,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613854035966
+    "lastModifiedOn": 1613905735683
   },
   "creationTag": {
     "versionNumber": 0,
