@@ -26,7 +26,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -39,7 +42,13 @@
       "meaning": "Date"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "death_Value_sum": 128,
+    "conf_Country/Region": 158,
+    "conf_Date": 183,
+    "reco_Value_sum": 120,
+    "conf_Value_sum": 120
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
