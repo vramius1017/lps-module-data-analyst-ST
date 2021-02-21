@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613899013743
+    "lastModifiedOn": 1613899268593
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,33 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Country/Region",
+        "type": "string"
+      },
+      {
+        "name": "Province/State",
+        "type": "string"
+      },
+      {
+        "name": "Lat",
+        "type": "double"
+      },
+      {
+        "name": "Long",
+        "type": "double"
+      },
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "Value",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
