@@ -53,8 +53,9 @@
       "disabled": false,
       "type": "DateParser",
       "params": {
+        "outCol": "",
         "formats": [
-          "dd-MM-yy",
+          "MM/dd/yy",
           ""
         ],
         "columns": [
@@ -78,6 +79,7 @@
     "Province/State": 141,
     "Long": 113,
     "Value": 100,
+    "Date2": 100,
     "Country/Region": 155,
     "Lat": 106,
     "Date": 100
