@@ -59,7 +59,7 @@
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -112,10 +112,6 @@
           },
           {
             "name": "Value_sum",
-            "type": "bigint"
-          },
-          {
-            "name": "count",
             "type": "bigint"
           }
         ],
