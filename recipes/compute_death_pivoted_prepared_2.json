@@ -11,6 +11,9 @@
           "map": {
             "death_pivoted": {
               "repartition": 10
+            },
+            "recovered_pivoted": {
+              "repartition": 10
             }
           }
         },
@@ -71,11 +74,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613906892281
+    "lastModifiedOn": 1613906898558
   },
   "creationTag": {
     "versionNumber": 0,
