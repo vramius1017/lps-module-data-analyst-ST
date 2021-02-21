@@ -8,7 +8,7 @@ time_series_covid19_deaths_global = dataiku.Dataset("time_series_covid19_deaths_
 deaths_global_df = time_series_covid19_deaths_global.get_dataframe()
 
 
-death_pivoted_df = deaths_global_df.melt(id_vars=["Country/Region", "Province/State", "Lat", "Lon"], 
+death_pivoted_df = deaths_global_df.melt(id_vars=["Country/Region", "Province/State", "Lat", "Long"], 
         var_name="Date", 
         value_name="Value")
 
