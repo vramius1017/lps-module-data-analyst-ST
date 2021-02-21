@@ -12,7 +12,9 @@ recovered_df = recovered.get_dataframe()
 # TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
 # NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
 
-recovered_pivoted_df = recovered_df # For this sample code, simply copy input to output
+recovered_pivoted_df = recovered_df.melt(id_vars=["Country/Region", "Province/State", "Lat", "Long"], 
+        var_name="Date", 
+        value_name="Value")
 
 
 # Write recipe outputs
