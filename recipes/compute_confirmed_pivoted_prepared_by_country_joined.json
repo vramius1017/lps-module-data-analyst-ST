@@ -19,6 +19,10 @@
         {
           "ref": "death_pivoted_prepared_by_CountryRegion",
           "deps": []
+        },
+        {
+          "ref": "recovered_pivoted_by_country",
+          "deps": []
         }
       ]
     }
@@ -34,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613907230789
+    "lastModifiedOn": 1613907349409
   },
   "creationTag": {
     "versionNumber": 0,
