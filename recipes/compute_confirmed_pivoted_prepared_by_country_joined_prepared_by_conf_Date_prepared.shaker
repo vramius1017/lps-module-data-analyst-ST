@@ -32,7 +32,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "PythonUDF",
@@ -51,6 +51,33 @@
         "vectorize": false
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "conf_Country/Region_first",
+            "to": "conf_Country/Region"
+          },
+          {
+            "from": "conf_Value_sum_sum",
+            "to": "conf_Value_sum"
+          },
+          {
+            "from": "death_Value_sum_sum",
+            "to": "death_Value_sum"
+          },
+          {
+            "from": "reco_Value_sum_sum",
+            "to": "reco_Value_sum"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -66,11 +93,15 @@
   },
   "columnWidthsByName": {
     "country": 100,
+    "death_Value_sum": 128,
+    "conf_Country/Region": 158,
     "conf_Value_sum_sum": 150,
     "conf_Date": 183,
+    "reco_Value_sum": 120,
     "death_Value_sum_sum": 158,
     "reco_Value_sum_sum": 150,
-    "conf_Country/Region_first": 203
+    "conf_Country/Region_first": 203,
+    "conf_Value_sum": 120
   },
   "sorting": [],
   "globalSearchQuery": "",
