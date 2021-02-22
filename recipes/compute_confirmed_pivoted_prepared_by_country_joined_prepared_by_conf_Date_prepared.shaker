@@ -26,8 +26,37 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "columns": [
+          "conf_Country/Region_first"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"World\"",
+        "column": "conf_Country/Region_first"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -39,7 +68,13 @@
       "meaning": "Date"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "conf_Value_sum_sum": 150,
+    "conf_Date": 183,
+    "death_Value_sum_sum": 158,
+    "reco_Value_sum_sum": 150,
+    "conf_Country/Region_first": 203
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
