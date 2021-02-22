@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "conf_Date"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "conf_Date",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "date",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,15 +26,20 @@
       "firstLastNotNull": false,
       "column": "conf_Country/Region",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "conf_Country/Region",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -31,13 +47,16 @@
       "firstLastNotNull": false,
       "column": "conf_Value_sum",
       "count": false,
-      "sum": false,
+      "$idx": 1,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -47,13 +66,16 @@
       "firstLastNotNull": false,
       "column": "death_Value_sum",
       "count": false,
-      "sum": false,
+      "$idx": 2,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -63,18 +85,21 @@
       "firstLastNotNull": false,
       "column": "reco_Value_sum",
       "count": false,
-      "sum": false,
+      "$idx": 3,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -110,8 +135,37 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Date",
+            "name": "conf_Date",
+            "type": "date"
+          },
+          {
+            "name": "conf_Country/Region_first",
+            "type": "string"
+          },
+          {
+            "name": "conf_Value_sum_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "death_Value_sum_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "reco_Value_sum_sum",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
