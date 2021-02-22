@@ -2,10 +2,6 @@
   "mode": "UNION",
   "selectedColumns": [
     "conf_Date",
-    "conf_Country/Region_first",
-    "conf_Value_sum_sum",
-    "death_Value_sum_sum",
-    "reco_Value_sum_sum",
     "conf_Country/Region",
     "conf_Value_sum",
     "death_Value_sum",
@@ -65,6 +61,34 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Date",
+            "name": "conf_Date",
+            "type": "date"
+          },
+          {
+            "name": "conf_Country/Region",
+            "type": "string"
+          },
+          {
+            "name": "conf_Value_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "death_Value_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "reco_Value_sum",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
