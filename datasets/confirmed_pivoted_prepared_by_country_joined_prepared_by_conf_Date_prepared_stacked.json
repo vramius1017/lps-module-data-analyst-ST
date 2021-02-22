@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613987424840
+    "lastModifiedOn": 1613987503504
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,22 +90,6 @@
         "name": "conf_Date",
         "type": "date",
         "meaning": "Date"
-      },
-      {
-        "name": "conf_Country/Region_first",
-        "type": "string"
-      },
-      {
-        "name": "conf_Value_sum_sum",
-        "type": "bigint"
-      },
-      {
-        "name": "death_Value_sum_sum",
-        "type": "bigint"
-      },
-      {
-        "name": "reco_Value_sum_sum",
-        "type": "bigint"
       },
       {
         "name": "conf_Country/Region",
