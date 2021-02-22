@@ -32,27 +32,23 @@
   },
   "steps": [
     {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "StringTransformer",
-      "params": {
-        "columns": [
-          "conf_Country/Region_first"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "truncate_limit": 0
-      },
-      "alwaysShowComment": false
-    },
-    {
       "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "CreateColumnWithGREL",
+      "type": "PythonUDF",
       "params": {
-        "expression": "\"World\"",
-        "column": "conf_Country/Region_first"
+        "mode": "CELL",
+        "envSelection": {
+          "envMode": "INHERIT"
+        },
+        "stopOnError": true,
+        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027cell\u0027 mode, the process function must return\n    # a single cell value for each row,\n    # which will be affected to a new column.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    return \"World\"\n",
+        "useKernel": false,
+        "column": "conf_Country/Region_first",
+        "sourceColumnsList": [],
+        "usePythonUnicode": true,
+        "vectorSize": 256,
+        "vectorize": false
       },
       "alwaysShowComment": false
     }
@@ -69,6 +65,7 @@
     }
   },
   "columnWidthsByName": {
+    "country": 100,
     "conf_Value_sum_sum": 150,
     "conf_Date": 183,
     "death_Value_sum_sum": 158,
