@@ -132,6 +132,8 @@
   },
   "name": "lps-module1-covid",
   "projectStatus": "Sandbox",
+  "imgColor": "#e13d3c",
+  "imgPattern": 8,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -187,11 +189,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1613662991129
+    "lastModifiedOn": 1615539602135
   },
   "creationTag": {
     "versionNumber": 0,
