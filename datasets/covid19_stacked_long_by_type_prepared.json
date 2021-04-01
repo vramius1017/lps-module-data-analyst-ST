@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617290611667
+    "lastModifiedOn": 1617291223475
   },
   "creationTag": {
     "versionNumber": 0,
@@ -93,6 +93,10 @@
       {
         "name": "date",
         "type": "date"
+      },
+      {
+        "name": "geopoint",
+        "type": "string"
       },
       {
         "name": "Province/State",
