@@ -59,10 +59,19 @@
       ],
       "valueColumns": [
         {
+          "last": false,
+          "max": false,
           "column": "Value",
-          "count": true,
+          "count": false,
+          "sum": true,
+          "concat": false,
           "type": "bigint",
-          "$agg": "count"
+          "$agg": "sum",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": false
         }
       ]
     }
