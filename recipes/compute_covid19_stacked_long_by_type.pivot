@@ -41,20 +41,33 @@
       }
     }
   },
-  "explicitIdentifiers": [],
+  "explicitIdentifiers": [
+    "Country/Region",
+    "Province/State",
+    "Date"
+  ],
   "otherColumns": [],
   "pivots": [
     {
+      "valueLimit": "NO_LIMIT",
       "minOccLimit": 0,
-      "topnLimit": 0,
-      "globalCount": true,
+      "topnLimit": 20,
+      "globalCount": false,
       "explicitValues": [],
       "keyColumns": [
         "type"
       ],
-      "valueColumns": []
+      "valueColumns": [
+        {
+          "column": "Value",
+          "count": true,
+          "type": "bigint",
+          "$agg": "count"
+        }
+      ]
     }
   ],
   "computedColumns": [],
-  "customAggregates": []
+  "customAggregates": [],
+  "enginesPreferences": {}
 }
