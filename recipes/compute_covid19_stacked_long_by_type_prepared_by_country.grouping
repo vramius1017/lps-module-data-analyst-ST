@@ -5,23 +5,16 @@
   },
   "keys": [
     {
-      "column": "country"
-    }
-  ],
-  "values": [
-    {
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
       "last": false,
       "max": false,
-      "firstLastNotNull": false,
-      "column": "date",
+      "column": "country",
       "count": false,
       "sum": false,
       "concat": false,
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
+      "type": "string",
       "stddev": false,
       "first": false
     },
@@ -29,10 +22,33 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "Province/State",
+      "column": "date",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "date",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "values": [
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Province/State",
+      "count": false,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -47,13 +63,16 @@
       "firstLastNotNull": false,
       "column": "confirmed",
       "count": false,
-      "sum": false,
+      "$idx": 1,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -63,13 +82,16 @@
       "firstLastNotNull": false,
       "column": "deaths",
       "count": false,
-      "sum": false,
+      "$idx": 2,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -79,18 +101,21 @@
       "firstLastNotNull": false,
       "column": "recovered",
       "count": false,
-      "sum": false,
+      "$idx": 3,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -126,8 +151,40 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {
+    "deaths_sum": "deaths",
+    "recovered_sum": "recovered",
+    "confirmed_sum": "confirmed"
+  },
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "name": "confirmed_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "deaths_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "recovered_sum",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
