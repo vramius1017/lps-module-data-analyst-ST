@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617289711288
+    "lastModifiedOn": 1617289785655
   },
   "creationTag": {
     "versionNumber": 0,
@@ -99,19 +99,19 @@
         "type": "string"
       },
       {
-        "name": "confirmed_Value_count",
+        "name": "confirmed_Value_sum",
         "type": "bigint"
       },
       {
-        "name": "deaths_Value_count",
+        "name": "deaths_Value_sum",
         "type": "bigint"
       },
       {
-        "name": "recovered_Value_count",
+        "name": "recovered_Value_sum",
         "type": "bigint"
       }
     ],
-    "userModified": false,
+    "userModified": true,
     "metadata": {
       "engineType": "DSS",
       "pivotElementsModalities": [
