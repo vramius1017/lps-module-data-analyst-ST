@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617289785655
+    "lastModifiedOn": 1617291027208
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,12 +103,36 @@
         "type": "bigint"
       },
       {
+        "name": "confirmed_Lat_first",
+        "type": "double"
+      },
+      {
+        "name": "confirmed_Long_first",
+        "type": "double"
+      },
+      {
         "name": "deaths_Value_sum",
         "type": "bigint"
       },
       {
+        "name": "deaths_Lat_first",
+        "type": "double"
+      },
+      {
+        "name": "deaths_Long_first",
+        "type": "double"
+      },
+      {
         "name": "recovered_Value_sum",
         "type": "bigint"
+      },
+      {
+        "name": "recovered_Lat_first",
+        "type": "double"
+      },
+      {
+        "name": "recovered_Long_first",
+        "type": "double"
       }
     ],
     "userModified": true,
