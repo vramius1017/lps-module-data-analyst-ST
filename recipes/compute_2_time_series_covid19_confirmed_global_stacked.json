@@ -31,18 +31,18 @@
     "main": {
       "items": [
         {
-          "ref": "2_time_series_covid19_confirmed_global_stacked",
+          "ref": "covid19_stacked",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617289145120
+    "lastModifiedOn": 1617289450284
   },
   "creationTag": {
     "versionNumber": 0,
