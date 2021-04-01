@@ -105,8 +105,75 @@
           {
             "from": "Country/Region",
             "to": "country"
+          },
+          {
+            "from": "confirmed_Lat_first",
+            "to": "lat"
+          },
+          {
+            "from": "confirmed_Long_first",
+            "to": "long"
           }
         ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "deaths_Lat_first",
+          "deaths_Long_first",
+          "recovered_Lat_first",
+          "recovered_Long_first"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geopoint",
+        "lat_column": "lat",
+        "lon_column": "long"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "long",
+          "lat"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "Province/State",
+        "columns": [
+          "geopoint"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -119,18 +186,27 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
-    "confirmed_Value_sum": 158,
     "date": 183,
+    "recovered_Long_first": 165,
     "country": 113,
+    "Date_parsed": 183,
+    "confirmed_Long_first": 165,
+    "geopoint": 204,
+    "confirmed_Lat_first": 158,
+    "confirmed": 100,
+    "deaths_Lat_first": 135,
+    "Date": 100,
+    "long": 100,
+    "confirmed_Value_sum": 158,
     "deaths_Value_sum": 135,
     "recovered": 100,
-    "Date_parsed": 183,
+    "deaths_Long_first": 143,
     "Province/State": 127,
     "recovered_Value_sum": 158,
     "Country/Region": 120,
-    "confirmed": 100,
-    "Date": 100,
-    "deaths": 100
+    "recovered_Lat_first": 158,
+    "deaths": 100,
+    "lat": 100
   },
   "sorting": [
     {
