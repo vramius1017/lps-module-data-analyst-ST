@@ -83,11 +83,11 @@
   "name": "lps-module1-covid\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617292231067
+    "lastModifiedOn": 1617292232036
   },
   "creationTag": {
     "versionNumber": 0,
