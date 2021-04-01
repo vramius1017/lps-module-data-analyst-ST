@@ -64,6 +64,51 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Date"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "confirmed_Value_sum",
+            "to": "confirmed"
+          },
+          {
+            "from": "deaths_Value_sum",
+            "to": "deaths"
+          },
+          {
+            "from": "recovered_Value_sum",
+            "to": "recovered"
+          },
+          {
+            "from": "Date_parsed",
+            "to": "date"
+          },
+          {
+            "from": "Country/Region",
+            "to": "country"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -75,14 +120,24 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "confirmed_Value_sum": 158,
+    "date": 183,
+    "country": 113,
     "deaths_Value_sum": 135,
+    "recovered": 100,
     "Date_parsed": 183,
     "Province/State": 127,
     "recovered_Value_sum": 158,
     "Country/Region": 120,
-    "Date": 100
+    "confirmed": 100,
+    "Date": 100,
+    "deaths": 100
   },
-  "sorting": [],
+  "sorting": [
+    {
+      "column": "Date_parsed",
+      "ascending": true
+    }
+  ],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
