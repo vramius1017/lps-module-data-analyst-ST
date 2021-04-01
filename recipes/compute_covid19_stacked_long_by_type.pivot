@@ -72,6 +72,38 @@
           "avg": false,
           "stddev": false,
           "first": false
+        },
+        {
+          "last": false,
+          "max": false,
+          "column": "Lat",
+          "count": false,
+          "sum": false,
+          "concat": false,
+          "type": "double",
+          "$agg": "first",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": true,
+          "orderColumn": "Country/Region"
+        },
+        {
+          "last": false,
+          "max": false,
+          "column": "Long",
+          "count": false,
+          "sum": false,
+          "concat": false,
+          "type": "double",
+          "$agg": "first",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": true,
+          "orderColumn": "Country/Region"
         }
       ]
     }
