@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617289613131
+    "lastModifiedOn": 1617289711288
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,107 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {
+        "name": "Country/Region",
+        "type": "string"
+      },
+      {
+        "name": "Province/State",
+        "type": "string"
+      },
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "confirmed_Value_count",
+        "type": "bigint"
+      },
+      {
+        "name": "deaths_Value_count",
+        "type": "bigint"
+      },
+      {
+        "name": "recovered_Value_count",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "DSS",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "type"
+            ],
+            "valueLimit": "NO_LIMIT",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": false,
+            "valueColumns": [
+              {
+                "column": "Value",
+                "type": "bigint",
+                "min": false,
+                "max": false,
+                "count": true,
+                "countDistinct": false,
+                "sum": false,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              }
+            ]
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "confirmed"
+              ],
+              "name": "confirmed",
+              "valueColumns": [
+                {
+                  "source": "Value",
+                  "pivoted": "confirmed_Value"
+                }
+              ]
+            },
+            {
+              "keyValues": [
+                "deaths"
+              ],
+              "name": "deaths",
+              "valueColumns": [
+                {
+                  "source": "Value",
+                  "pivoted": "deaths_Value"
+                }
+              ]
+            },
+            {
+              "keyValues": [
+                "recovered"
+              ],
+              "name": "recovered",
+              "valueColumns": [
+                {
+                  "source": "Value",
+                  "pivoted": "recovered_Value"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   },
   "dkuProperties": [],
   "metrics": {
