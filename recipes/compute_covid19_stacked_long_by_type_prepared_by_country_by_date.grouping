@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "date"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "date",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "date",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +26,10 @@
       "firstLastNotNull": false,
       "column": "country",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -31,8 +44,10 @@
       "firstLastNotNull": false,
       "column": "geopoint",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -47,13 +62,16 @@
       "firstLastNotNull": false,
       "column": "confirmed",
       "count": false,
-      "sum": false,
+      "$idx": 2,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -63,13 +81,16 @@
       "firstLastNotNull": false,
       "column": "deaths",
       "count": false,
-      "sum": false,
+      "$idx": 3,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -79,13 +100,16 @@
       "firstLastNotNull": false,
       "column": "recovered",
       "count": false,
-      "sum": false,
+      "$idx": 4,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -126,8 +150,36 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "name": "confirmed_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "deaths_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "recovered_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
