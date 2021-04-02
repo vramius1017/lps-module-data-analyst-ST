@@ -62,6 +62,37 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "name": "geopoint",
+            "type": "string"
+          },
+          {
+            "name": "confirmed",
+            "type": "bigint"
+          },
+          {
+            "name": "deaths",
+            "type": "bigint"
+          },
+          {
+            "name": "recovered",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
