@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617349753371
+    "lastModifiedOn": 1617349775066
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,19 +91,15 @@
         "type": "date"
       },
       {
-        "name": "confirmed_sum",
+        "name": "confirmed",
         "type": "bigint"
       },
       {
-        "name": "deaths_sum",
+        "name": "deaths",
         "type": "bigint"
       },
       {
-        "name": "recovered_sum",
-        "type": "bigint"
-      },
-      {
-        "name": "count",
+        "name": "recovered",
         "type": "bigint"
       }
     ],
