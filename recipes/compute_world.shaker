@@ -32,13 +32,27 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "\u0027World\u0027",
         "column": "country"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "country"
+        ],
+        "reorderAction": "AT_START",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -52,6 +66,7 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "date": 183,
+    "country": 100,
     "recovered": 113,
     "confirmed": 113,
     "deaths": 100
