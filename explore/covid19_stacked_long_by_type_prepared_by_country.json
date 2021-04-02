@@ -10,7 +10,8 @@
       "date": 183,
       "confirmed": 100,
       "deaths": 100,
-      "recovered": 100
+      "recovered": 100,
+      "geopoint": 204
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -24,7 +25,7 @@
       },
       {
         "column": "date",
-        "ascending": true
+        "ascending": false
       }
     ],
     "analysisColumnData": {},
@@ -398,6 +399,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
