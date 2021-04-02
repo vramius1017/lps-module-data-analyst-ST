@@ -176,6 +176,20 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateFormatter",
+      "params": {
+        "inCol": "date",
+        "outCol": "date",
+        "format": "yyyy-MM-dd",
+        "timezone_id": "UTC",
+        "lang": "en_US"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -201,6 +215,7 @@
     "deaths_Value_sum": 135,
     "recovered": 100,
     "deaths_Long_first": 143,
+    "date_formatted": 148,
     "Province/State": 127,
     "recovered_Value_sum": 158,
     "Country/Region": 120,
