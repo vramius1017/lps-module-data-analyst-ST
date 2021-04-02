@@ -114,7 +114,7 @@
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -150,7 +150,11 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "deaths_sum": "deaths",
+    "recovered_sum": "recovered",
+    "confirmed_sum": "confirmed"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
@@ -170,10 +174,6 @@
           },
           {
             "name": "recovered_sum",
-            "type": "bigint"
-          },
-          {
-            "name": "count",
             "type": "bigint"
           }
         ],
