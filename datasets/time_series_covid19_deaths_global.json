@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617351247932
+    "lastModifiedOn": 1617352976502
   },
   "creationTag": {
     "versionNumber": 0,
@@ -76,10 +76,12 @@
     "folderSmartId": "0C0YrLCq",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
-      "mode": "ALL",
+      "mode": "EXPLICIT_SELECT_FILES",
       "excludeRules": [],
       "includeRules": [],
-      "explicitFiles": []
+      "explicitFiles": [
+        "1_time_series_covid19_deaths_global.csv"
+      ]
     }
   },
   "schema": {
