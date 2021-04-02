@@ -71,7 +71,7 @@
           },
           {
             "name": "date",
-            "type": "date"
+            "type": "string"
           },
           {
             "name": "geopoint",
